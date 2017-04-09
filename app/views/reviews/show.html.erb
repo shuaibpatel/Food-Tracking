@@ -1,0 +1,36 @@
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<body background="http://www.insp.gov.ro/images/jdownloads/catimages/monitorizare.jpg">
+
+<center>
+	<h1>Review</h1>
+<p>
+  <strong>Name:</strong>
+  <%= @review.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @review.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @review.phone %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @review.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>
+</center>

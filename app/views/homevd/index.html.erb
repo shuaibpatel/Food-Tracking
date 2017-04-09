@@ -1,0 +1,43 @@
+
+
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center"></h2>
+
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="http://files.vividscreen.info/soft/69c86bcd3213f2133a603337df047785/Delicious-French-Specialities-1024x600.jpg">
+  <img class="mySlides" src="https://3.bp.blogspot.com/-y3IMcv97LnQ/V0fJqlJLJKI/AAAAAAAABJA/o6wjMBZA_XwqdNLdJzo3x2t_QBHVB19swCLcB/s1600/439410.jpg" style="width:100%">
+  <img class="mySlides" src="http://svopi.ru/uploads/posts/2016-04/1461912667_9.jpg">
+
+
+</div>
+
+<center><a href="http://localhost:3000/products" class="btn btn-info" role="button"><font color="Red">Start Shopping</font></a></center>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+</body>
+</html>
+

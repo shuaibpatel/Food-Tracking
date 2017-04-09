@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<head>
+<style>
+body {
+  
+    background-height:auto;
+    background-size: cover;
+   
+    
+    background-image: url("http://www.freeimageslive.com/galleries/food/misc/pics/fridgeblured1641.jpg");
+    background-repeat: no-repeat;
+
+}
+
+
+</style>
+</head>
+
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Welcome to FridgeHistory </h1>
+
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customersps.each do |customersp| %>
+      <tr>
+        <td><%= customersp.namesp %></td>
+        <td><%= customersp.surnamesp %></td>
+        <td><%= customersp.emailsp %></td>
+        <td><%= customersp.phonesp %></td>
+        <td><h1><%= link_to 'View Profile', customersp %></h1></td>
+        <td><h3><%= link_to 'Edit ', edit_customersp_path(customersp) %></h3></td>
+        <td><%= link_to 'Remove ', customersp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+ <%= link_to 'New Customer', new_customersp_path %>

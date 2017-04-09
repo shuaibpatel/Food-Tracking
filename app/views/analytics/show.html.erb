@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Food:</strong>
+  <%= @analytic.Food %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @analytic.Day %>
+</p>
+
+<p>
+  <strong>Protein:</strong>
+  <%= @analytic.Protein %>
+</p>
+
+<p>
+  <strong>Carbohydrates:</strong>
+  <%= @analytic.Carbohydrates %>
+</p>
+
+<p>
+  <strong>Fats:</strong>
+  <%= @analytic.Fats %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @analytic.Calories %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @analytic.Country %>
+</p>
+
+<%= link_to 'Edit', edit_analytic_path(@analytic) %> |
+<%= link_to 'Back', analytics_path %>

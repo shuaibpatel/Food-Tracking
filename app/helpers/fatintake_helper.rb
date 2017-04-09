@@ -1,0 +1,2 @@
+module FatintakeHelper
+end

@@ -1,0 +1,149 @@
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Monday',    <%=@monday%>],
+          ['Tuesday',  <%=@tuesday%>],
+          ['Wednesday',  <%=@wednesday%>],
+          ['Thursday', <%=@thursday%>],
+          ['Friday',    <%=@friday%>],
+          ['Saturday',    <%=@saturday%>],
+          ['Sunday',<%=@sunday%>],
+
+        ]);
+
+        var options = {
+          title: 'Calorie Breakdown'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+
+      }
+
+      </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+     google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Protein',  <%=@protein%>],
+          ['Carbohydrates', <%=@carb%>],
+          ['Fats', <%=@fat%>],
+         
+        ]);
+
+        var options = {
+          title: 'Food Breakdown',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+
+
+
+
+
+   
+
+
+    </script>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Target', 'Achieved'],
+          ['Monday',  1150,     <%=@monday%>],
+          ['Tuesday',  1170,     <%=@tuesday%>],
+          ['Wednesday',  660,  <%=@wednesday%>   ],
+          ['Thursday',  1030,   <%=@thursday%>],
+          ['Friday',  660,      <%=@friday%>],
+          ['Saturday',  660,  <%=@saturday%>],
+          ['Sunday',  660,    <%=@sunday%>]
+         
+        ]);
+
+        var options = {
+          title: 'Target Analysis',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('upcoming', {'packages':['geochart']});
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Calories'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+
+
+
+
+  </head>
+  <body>
+    <div id="piechart" style="width: 50%; height: 70%; float:left"></div>
+
+    <div id="piechart_3d" style="width: 50%; height: 75%; float:right"></div>
+
+    <div id="curve_chart" style="width: 40%; height: 60%; float:left  "></div>
+    
+
+    <div id="regions_div" style="width: 40%; height: 30%; float:right"></div>
+    
+  
+
+    
+
+  </body>
+</html>

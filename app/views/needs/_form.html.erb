@@ -1,0 +1,55 @@
+<%= form_for(@need) do |f| %>
+  <% if @need.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@need.errors.count, "error") %> prohibited this need from being saved:</h2>
+
+      <ul>
+      <% @need.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :product %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :calories %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :sugar %><br>
+    <%= f.text_field :manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :fat %><br>
+    <%= f.text_field :color %>
+  </div>
+
+<div class="field">
+MILK:
+<%= check_box_tag 'need[milk]', 'milk' %>
+</div>
+<div class="field">
+EGG:
+<%= check_box_tag 'need[egg]', 'egg' %>
+</div>
+<div class="field">
+BREAD:
+<%= check_box_tag 'need[bread]', 'bread' %>
+</div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

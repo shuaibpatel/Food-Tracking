@@ -1,0 +1,57 @@
+<%= form_for(@shake) do |f| %>
+  <% if @shake.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shake.errors.count, "error") %> prohibited this shake from being saved:</h2>
+
+      <ul>
+      <% @shake.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Cost %><br>
+    <%= f.text_field :Cost %>
+  </div>
+  <div class="field">
+    <%= f.label :Calories %><br>
+    <%= f.text_field :Calories %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br>
+    <%= f.text_area :Description %>
+  </div>
+  
+
+ <h3>Add Extras</h3>
+    
+      
+  
+  
+     <div class="field">
+Caramel:
+<%= check_box_tag 'shake[caramel]', 'caramel' %>
+</div>
+<div class="field">
+Peanut butter:
+<%= check_box_tag 'shake[pbutter]', 'pbutter' %>
+</div>
+<div class="field">
+Cream:
+<%= check_box_tag 'shake[cream]', 'cream' %>
+</div>
+  
+  
+  
+  <div class="actions">
+    
+    <%= f.submit "Submit ",:class=>'btn btn-primary' %>
+   
+  </div>
+<% end %>

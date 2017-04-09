@@ -1,0 +1,49 @@
+   <%= form_for([@customersp, @foodsp]) do |f| %>
+  <% if @foodsp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@foodsp.errors.count, "error") %> prohibited this foodsp from being saved:</h2>
+
+      <ul>
+      <% @foodsp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :product %><br>
+    <%= f.text_field :productsp %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :pricesp %>
+  </div>
+  <div class="field">
+    <%= f.label :expiry %><br>
+    <%= f.text_field :expirysp %>
+  </div>
+  <div class="field">
+    <%= f.label :calories %><br>
+    <%= f.text_field :caloriessp %>
+  </div>
+  <div class="field">
+    <%= f.label :proteins %><br>
+    <%= f.text_field :proteinssp %>
+  </div>
+  <div class="field">
+    <%= f.label :sugar %><br>
+    <%= f.text_field :sugarsp %>
+  </div>
+  <div class="field">
+    <%= f.label :fat %><br>
+    <%= f.text_field :fatsp %>
+  </div>
+  <div class="field">
+    <%= f.label :customer_id %><br>
+    <%= f.text_field :customersp_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

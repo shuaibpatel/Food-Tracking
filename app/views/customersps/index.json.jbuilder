@@ -1,0 +1,1 @@
+json.array! @customersps, partial: 'customersps/customersp', as: :customersp

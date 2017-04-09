@@ -1,0 +1,31 @@
+
+<h1>Listing Reviews</h1>
+
+<table class="table table-bordered table-striped">
+  
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.name %></td>
+        <td><%= review.email %></td>
+        <td><%= review.phone %></td>
+        <td><%= review.description %></td>
+        <td><%= link_to 'Show', review %></td>
+        <td><%= link_to 'Edit', edit_review_path(review) %></td>
+        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Review', new_review_path %>

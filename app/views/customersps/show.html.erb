@@ -1,0 +1,48 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><h3>Name:</h3></strong>
+  <h4><%= @customersp.namesp %></h4>
+</p>
+
+<p>
+  <strong><h3>Surname:</h3></strong>
+  <h4><%= @customersp.surnamesp %></h4>
+</p>
+
+<p>
+  <strong><h3>Email:</h3></strong>
+  <h4><%= @customersp.emailsp %></h4>
+</p>
+
+<p>
+  <strong><h3>Phone:</h3></strong>
+  <h4><%= @customersp.phonesp %></h4>
+</p>
+
+<!-- Display the foodsp of a customersp -->
+<h2>Foodsps</h2>
+<% @customersp.foodsps.each do |foodsp| %>
+<p>
+<b>Product:</b>
+<%= foodsp.productsp %>
+<b>Pricesp:</b>
+<%= foodsp.pricesp %>
+<b>Expirysp:</b>
+<%= foodsp.expirysp %>
+<b>Caloriessp:</b>
+<%= foodsp.caloriessp %>
+<b>Proteinssp:</b>
+<%= foodsp.proteinssp %>
+<b>Sugarsp:</b>
+<%= foodsp.sugarsp %>
+<b>Fatsp:</b>
+<%= foodsp.fatsp %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', edit_customersp_path(@customersp) %> |
+<%= link_to 'Back', customersps_path %> |
+<%= link_to 'Show Food', customersp_foodsps_path(@customersp) %>

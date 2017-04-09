@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Needs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Calories</th>
+      <th>Sugar</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Fats</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @needs.each do |need| %>
+      <tr>
+        <td><%= need.firstname %></td>
+        <td><%= need.lastname %></td>
+        <td><%= need.manufacturer %></td>
+        <td><%= need.cost %></td>
+        <td><%= need.description %></td>
+        <td><%= need.color %></td>
+        <td><%= link_to 'Show', need %></td>
+        <td><%= link_to 'Edit', edit_need_path(need) %></td>
+        <td><%= link_to 'Destroy', need, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<br>
+
+<h3><%= link_to 'Add New Need', new_need_path %></h3>
+
+<h3> <%= link_to 'Back to Profile', customersps_path %></h3>
+

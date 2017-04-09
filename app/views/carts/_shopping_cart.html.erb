@@ -1,0 +1,59 @@
+
+
+
+<body background="http://www.magic4walls.com/wp-content/uploads/2013/11/food-berry-cherry-cherry-background-wallpaper-widescreen-fullscreen-widescreen-HD-wallpapers-background-wallpaper-widescreen-fullscreen-widescreen.jpg">
+
+    <button type="button" class="btn btn-primary btn-lg">
+  
+   <a <%= link_to 'Products', products_url %>
+
+<span class="glyphicon glyphicon-plus"></span> 
+</button>
+     </a>
+<button type="button" class="btn btn-primary btn-lg">
+ <a <%= link_to 'Payments', payments_url %>
+
+<span class="glyphicon glyphicon-phone"></span>
+
+     </a>
+</button>
+
+
+     
+
+
+
+<% if !@order_item.nil? && @order_item.errors.any? %>
+  <div class="alert alert-danger">
+    <ul>
+    <% @order_item.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+<% if @order_items.size == 0 %>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+  <p class="text-center">
+   <center><font color="darkgray"><h1>No items in your shopping cart.</br> Please go back and add some items to your cart</h1>
+  </font></center></p>
+
+</br>
+</br>
+</br>
+</br>
+
+    <center>
+      <a <%= link_to 'Back', products_url %></a>
+    </center>
+  
+<% else %>
+  <% @order_items.each do |order_item| %>
+    <%= render 'carts/cart_row', product: order_item.product, order_item: order_item, show_total: true %>
+  <% end %>
+<% end %>

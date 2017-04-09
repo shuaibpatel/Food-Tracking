@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productsp: MyString
+  pricesp: MyString
+  expirysp: MyString
+  caloriessp: MyString
+  proteinssp: MyString
+  sugarsp: MyString
+  fatsp: MyString
+  customersp: one
+
+two:
+  productsp: MyString
+  pricesp: MyString
+  expirysp: MyString
+  caloriessp: MyString
+  proteinssp: MyString
+  sugarsp: MyString
+  fatsp: MyString
+  customersp: one
+
+three:
+  productsp: MyString
+  pricesp: MyString
+  expirysp: MyString
+  caloriessp: MyString
+  proteinssp: MyString
+  sugarsp: MyString
+  fatsp: MyString
+  customersp: two 
+
+
+four:
+  productsp: MyString
+  pricesp: MyString
+  expirysp: MyString
+  caloriessp: MyString
+  proteinssp: MyString
+  sugarsp: MyString
+  fatsp: MyString
+  customersp: two 
+
+five:
+  productsp: MyString
+  pricesp: MyString
+  expirysp: MyString
+  caloriessp: MyString
+  proteinssp: MyString
+  sugarsp: MyString
+  fatsp: MyString
+  customersp: two
+
+six:
+  productsp: MyString
+  pricesp: MyString
+  expirysp: MyString
+  caloriessp: MyString
+  proteinssp: MyString
+  sugarsp: MyString
+  fatsp: MyString
+  customersp_id: 
+

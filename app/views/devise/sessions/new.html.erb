@@ -1,0 +1,32 @@
+<head>
+<style>
+body {
+
+    background-height:auto;
+   
+    
+     background-size: cover;
+   
+    background-image: url("http://i.huffpost.com/gen/1496787/images/o-HEALTHY-FOOD-facebook.jpg");
+    background-repeat: no-repeat;
+ 
+}
+
+</style>
+</head>
+
+
+
+
+<div class="border-form-div">
+  <h2>Sign in</h2>
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <%= f.email_field :email, :autofocus => true %>
+    <%= f.password_field :password %>
+    <% if devise_mapping.rememberable? -%>
+     
+    <% end -%>
+    <%= f.submit "Sign in" , :class=>'btn btn-primary'%>
+  <% end %>
+  <%= render "devise/shared/links" %>
+</div>

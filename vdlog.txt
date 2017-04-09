@@ -1,0 +1,25 @@
+A new payment requested: nil
+A new payment requested: hhhhhhh
+A new payment requested: #<Payment id: nil, first_name: "vvv", last_name: "vvvvvv", last4: nil, amount: #<BigDecimal:7fcc0c9d5190,'0.2E5',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "ggg", last_name: "hhh", last4: nil, amount: #<BigDecimal:7fd5124bddd8,'0.5E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "kkk", last_name: "lll", last4: nil, amount: #<BigDecimal:7fbfde791e68,'0.9E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "dfkh", last_name: "sdlfkj", last4: nil, amount: #<BigDecimal:7fbfdd365d18,'0.74E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "nnn", last_name: "mmm", last4: nil, amount: #<BigDecimal:7fbfdd1e8a80,'0.3E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "sfjkhsdfjkh", last_name: "sdjkhfskdjfh", last4: nil, amount: #<BigDecimal:7ff762991248,'0.8E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "sfjkhsdfjkh", last_name: "sdjkhfskdjfh", last4: nil, amount: #<BigDecimal:7ff76154a5a0,'0.8E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "Vinayak", last_name: "dhole", last4: nil, amount: #<BigDecimal:7ff022341b00,'0.1E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "vinayak ", last_name: "dhole1", last4: nil, amount: #<BigDecimal:7f91ba659818,'0.8E3',9(18)>, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>
+A new payment requested: #<Payment id: nil, first_name: "", last_name: "", last4: nil, amount: nil, success: nil, authorization_code: nil, created_at: nil, updated_at: nil>

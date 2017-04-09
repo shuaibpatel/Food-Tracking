@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <style>
+ body {
+   
+   
+   
+      background-image: url("https://thumbs.dreamstime.com/z/food-theme-background-2733409.jpg");
+   
+   
+   
+   
+   
+ }
+ 
+
+      
+      
+      
+    </style>
+    
+    
+    </head>
+<p id="notice"><%= notice %></p>
+
+<body>
+<div class="container">
+  <h1>Listing Customers</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.name %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.contact %></td>
+        <td><%= link_to 'Show', customer %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+
+<br>
+</body>
+
+</html>
+<%= link_to 'New Customer', new_customer_path %>

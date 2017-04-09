@@ -1,0 +1,39 @@
+
+<body background="http://www.magic4walls.com/wp-content/uploads/2013/11/food-berry-cherry-cherry-background-wallpaper-widescreen-fullscreen-widescreen-HD-wallpapers-background-wallpaper-widescreen-fullscreen-widescreen.jpg">
+<button type="button" class="btn btn-primary btn-lg">
+  
+   <a <%= link_to 'Cart', cart_path %>
+
+<span class="glyphicon glyphicon-plus"></span> 
+</button>
+     </a>
+<button type="button" class="btn btn-primary btn-lg">
+ <a <%= link_to 'Payments', payments_url %>
+
+<span class="glyphicon glyphicon-phone"></span>
+
+     </a>
+</button>
+
+
+<div class="background">
+<div class="transbox">
+   <center><p><font color="navy"><h1>Products for Sale<h1></font></p></centre>
+  </div>
+</div>
+</br>
+</br>
+</br>
+
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <% @products.each do |product| %>
+      <%= render "product_row", product: product, order_item: @order_item %>
+    <% end %>
+</br>
+    <center><a  <%= link_to 'Shopping Cart', cart_path %> </a></center>
+
+  </div>
+</div>
+</body>
+</html>

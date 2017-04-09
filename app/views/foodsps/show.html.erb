@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Product:</strong>
+  <%= @foodsp.productsp %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= @foodsp.pricesp %>
+</p>
+
+<p>
+  <strong>Expiry:</strong>
+  <%= @foodsp.expirysp %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @foodsp.caloriessp %>
+</p>
+
+<p>
+  <strong>Proteins:</strong>
+  <%= @foodsp.proteinssp %>
+</p>
+
+<p>
+  <strong>Sugar:</strong>
+  <%= @foodsp.sugarsp %>
+</p>
+
+<p>
+  <strong>Fat:</strong>
+  <%= @foodsp.fatsp %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @foodsp.customersp_id %>
+</p>
+
+<%= link_to 'Edit', edit_customersp_foodsp_path(@customersp, @foodsp) %> |
+   <%= link_to 'Back', customersp_foodsps_path(@customersp) %>

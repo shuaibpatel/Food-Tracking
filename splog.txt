@@ -1,0 +1,120 @@
+ A new food is added:
+ A new customer is added:test
+ A new food is added:test food logger
+ A new food is added:
+A new Customer requested: TesinginSPLogger
+ A new food is added:Testing
+ A new food is added:Hello#<Foodsp id: nil, productsp: "Hello", pricesp: "", expirysp: "", caloriessp: "", proteinssp: "", sugarsp: "", fatsp: "", customersp_id: 8, created_at: nil, updated_at: nil>
+ A new food is added:
+ A new Need is added:Test
+ A new Basic Need is added:HelloTest
+ A new Basic Need is added:Okaydin
+ A new Basic Need is added:nil
+ A new Basic Need is added:nil
+ A new Basic Need is added:#<Need id: nil, firstname: "Decorator pattern", lastname: "testing", manufacturer: "", cost: #<BigDecimal:7f83554c6050,'0.1E2',9(27)>, description: "bread: 2 + egg: 5 + milk: 3 + basic need; ; : 0", color: "", created_at: nil, updated_at: nil>
+ A new Basic Need is added:Test
+ A new Basic Need is added:bread: 2 + egg: 5 + milk: 3 + basic need; the; Decoratorpattern: 0
+ A new Basic Need is added:basic need; 3; 323: 0
+###############Observer Demo:#
++++ NeedObserver: The need of
+Milk 12
+has been updated. cost 10.0
+##############################
+ A new Basic Need is added:egg: 5 + basic need; 16; 12: 0
+ A new Basic Need is added:bread: 2 + egg: 5 + milk: 3 + basic need; ; : 0
+ A new Basic Need is added:basic need; ; : 20
+ A new Basic Need is added:basic need; 12; 78: 0
+ A new Basic Need is added:basic need; 12; 12: 20
+ A new Basic Need is added:basic need; ; : 2000
+###############Observer Demo:#
++++ NeedObserver: The need of
+ 
+has been updated. cost 2003.0
+##############################
+ A new Basic Need is added:basic need; ASJH; YES: 2000
+###############Observer Demo:#
++++ NeedObserver: The need of
+SHU IB
+has been updated. cost 2010.0
+##############################
+ A new Basic Need is added:egg: 5 + basic need; ; : 2000
+###############Observer Demo:#
++++ NeedObserver: The need of
+Milk 12
+has been updated. cost 2010.0
+##############################
+###############Observer Demo:#
++++ NeedObserver: The need of
+ 
+has been updated. cost 2002.0
+##############################
+###############Observer Demo:#
++++ NeedObserver: The need of
+ 
+has been updated. cost 2010.0
+##############################
+###############Observer Demo:#
++++ NeedObserver: The need of
+ 
+has been updated. cost 2003.0
+##############################
+###############Observer Demo:#
++++ NeedObserver: The need of
+ 
+has been updated. cost 2010.0
+##############################
+###############Observer Demo:#
++++ NeedObserver: The need of
+ 
+has been updated. cost 2005.0
+##############################
+ A new Basic Need is added:basic need; ; : 2000
+A new Customer requested: VinayakAneeshvinan@gmail.com678
+ A new food is added:Aple
+ A new food is added:Mango
+A new Customer requested: 
+A new Customer requested: ghj
+A new Customer requested: jhgjh76jhghjjhgghj
+ A new food is added:
+ A new food is added:12d
+ A new food is added:dsds
+ A new food is added:dsds
+ A new Basic Need is added:basic need; ; : 2000
+A new Customer requested: 
+ A new Basic Need is added:basic need; ; : 2000
+A new Customer requested: ShuaibPatelshuaib.a.patel@gmail.com0892213554
+A new Customer requested: 
+ A new food is added:Apple
+ A new food is added:Milk
+ A new food is added:Banana62017
+ A new Basic Need is added:basic need; 2; 1: 2000
+ A new Basic Need is added:basic need; 2; 1: 2000
+ A new Basic Need is added:basic need; 2; 1: 2000
+ A new Basic Need is added:basic need; 2; 1: 2000
+ A new Basic Need is added:basic need; ; : 2000
+ A new Basic Need is added:basic need; 12; 1: 2000
+ A new Basic Need is added:basic need; 12; 1: 2000
+ A new Basic Need is added:bread: 2 + egg: 5 + milk: 3 + basic need; 12; 1: 2000
+ A new Basic Need is added:bread: 2 + egg: 5 + milk: 3 + basic need; ; : 2000
+ A new Basic Need is added:bread: 2 + egg: 5 + milk: 3 + basic need; ; : 2000
+ A new Basic Need is added:bread: 2 + egg: 5 + milk: 3 + basic need; ; : 2000
+ A new Basic Need is added:basic need; 12; 1: 2000
+###############Observer Demo:#
++++ NeedObserver: The need of
+Chicken 123
+has been updated. cost 30.0
+##############################
+ A new Basic Need is added:basic need; ; : 2000
+ A new Basic Need is added:basic need; ; : 2000
+ A new Basic Need is added:basic need; 34; 1: 2000
+ A new Basic Need is added:basic need; 34; 1: 2000
+###############Observer Demo:#
++++ NeedObserver: The need of
+Meat 78
+has been updated. cost 30.0
+##############################
+A new Customer requested: ShuaibPatelshuaib.a.patel@gmail.com0892213554
+ A new food is added:Apple212/01/2017
+A new Customer requested: ShuaibPatelshuaib.a.patel@gmail.com0892213554
+ A new food is added:Apple2012/01/2017
+ A new food is added:Mango1212/01/2018

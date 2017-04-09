@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @need.firstname %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @need.lastname %>
+</p>
+
+<p>
+  <strong>Sugar:</strong>
+  <%= @need.manufacturer %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @need.cost %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @need.description %>
+</p>
+
+<p>
+  <strong>Fat:</strong>
+  <%= @need.color %>
+</p>
+
+<%= link_to 'Edit', edit_need_path(@need) %> |
+<%= link_to 'Back', needs_path %>

@@ -1,0 +1,1 @@
+json.partial! "foodsps/foodsp", foodsp: @foodsp

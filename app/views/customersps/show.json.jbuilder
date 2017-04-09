@@ -1,0 +1,1 @@
+json.partial! "customersps/customersp", customersp: @customersp

@@ -1,0 +1,11 @@
+A new Shake requested: Brownies
+###############Observer Demo:#
++++ ShakeObserver: The Shake of
+Brownies 120.0
+has been updated. cost 150.0
+##############################
+###############Observer Demo:#
++++ ShakeObserver: The Shake of
+Brownies 120.0
+has been updated. cost 150.0
+##############################

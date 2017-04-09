@@ -1,0 +1,45 @@
+<%= form_for(@analytic) do |f| %>
+  <% if @analytic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@analytic.errors.count, "error") %> prohibited this analytic from being saved:</h2>
+
+      <ul>
+      <% @analytic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Food %><br>
+    <%= f.text_field :Food %>
+  </div>
+  <div class="field">
+    <%= f.label :Day %><br>
+    <%= f.text_field :Day %>
+  </div>
+  <div class="field">
+    <%= f.label :Protein %><br>
+    <%= f.number_field :Protein %>
+  </div>
+  <div class="field">
+    <%= f.label :Carbohydrates %><br>
+    <%= f.number_field :Carbohydrates %>
+  </div>
+  <div class="field">
+    <%= f.label :Fats %><br>
+    <%= f.number_field :Fats %>
+  </div>
+  <div class="field">
+    <%= f.label :Calories %><br>
+    <%= f.number_field :Calories %>
+  </div>
+  <div class="field">
+    <%= f.label :Country %><br>
+    <%= f.text_field :Country %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

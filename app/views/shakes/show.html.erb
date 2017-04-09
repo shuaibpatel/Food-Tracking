@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @shake.Name %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @shake.Cost %>
+</p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @shake.Calories %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @shake.Description %>
+</p>
+
+<%= link_to 'Edit', edit_shake_path(@shake) %> |
+<%= link_to 'Back', shakes_path %>

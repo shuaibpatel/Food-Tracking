@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing all your products: </h1>
+
+<table class="table table-hover">
+
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Expiry</th>
+      <th>Calories</th>
+      <th>Proteins</th>
+      <th>Sugar</th>
+      <th>Fat</th>
+      <th>Customer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @foodsps.each do |foodsp| %>
+      <tr>
+        <td><%= foodsp.productsp %></td>
+        <td><%= foodsp.pricesp %></td>
+        <td><%= foodsp.expirysp %></td>
+        <td><%= foodsp.caloriessp %></td>
+        <td><%= foodsp.proteinssp %></td>
+        <td><%= foodsp.sugarsp %></td>
+        <td><%= foodsp.fatsp %></td>
+        <td><%= foodsp.customersp_id%></td>
+        <td><%= link_to 'Show', customersp_foodsp_path(@customersp, foodsp) %></td>
+        <td><%= link_to 'Edit', edit_customersp_foodsp_path(@customersp, foodsp) %></td>
+        <td><%= link_to 'Destroy', customersp_foodsp_path(@customersp, foodsp), method: :delete,data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h3>Total Number of Products: </h3> 
+<h3> <%= Foodsp.where(:customersp_id =>['1']).count(:productsp) %> </h3>
+
+
+<h3>Total Proteins Intake: </h3>
+<h3> <%= Foodsp.where(:customersp_id =>['1']).sum(:proteinssp) %> </h3>
+<h3> <%= @prot1 %></h3>
+
+
+<h3>Total Fats Intake: </h3>
+<h3> <%= Foodsp.where(:customersp_id =>['1']).sum(:fatsp) %> </h3>
+
+<h3>Total Calories Intake: </h3>
+<h3> <%= Foodsp.where(:customersp_id =>['1']).sum(:caloriessp) %> </h3>
+
+
+<h1><%= link_to 'Add New Product', new_customersp_foodsp_path(@customersp) %></h1>
+
+<h2><%= link_to 'Add Basic Need', new_need_path %></h2>
+
+<h3><%= link_to 'Know Calories intake', fat_url %></h3>
+
+<h3> <%= link_to 'Back to Profile', @customersp %></h3>

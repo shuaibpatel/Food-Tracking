@@ -1,0 +1,1 @@
+json.array! @shakes, partial: 'shakes/shake', as: :shake
